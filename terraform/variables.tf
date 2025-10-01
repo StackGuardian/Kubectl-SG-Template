@@ -22,3 +22,13 @@ variable "vpc_id" {
 variable "public_subnet_id" {
   type = string
 }
+
+variable "aws_key_name" {
+  description = "Name of the existing AWS key pair"
+  type        = string
+}
+
+variable "ssh_private_key" {
+  description = "Content of the SSH private key"
+  type        = string
+}
