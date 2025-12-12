@@ -8,9 +8,13 @@ terraform {
       source  = "hashicorp/random"
       version = "~> 3.7.0"
     }
+    tls = {
+      source  = "hashicorp/tls"
+      version = "~> 4.1.0"
+    }
   }
 }
 
 provider "aws" {
-  region = var.region
+  region = var.aws_region
 }
